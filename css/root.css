@@ -1,0 +1,19 @@
+:root{
+    /* sizes */
+    --container-max-w: 1152px;
+    --global-font-size: 16px;
+    --title-font-size: 3rem;
+
+    /* colors */
+    --primary-color: #2174ea;      /* the logo color */
+    --secondary-color: #62748e;    /* the text color*/
+    --tertiary-color: #1d293d;     /* the title color */
+    --inverse-color: #ebe6e7;      /* the second light-background color */
+    --title-light-color: #f1f5f9;  /* h1 color */
+    --text-light-color: #90a1b9;   /* nav color */
+    --background-color: #f9f3f4;
+
+    /* fonts */
+    --text-font-family:'inter' sans-serif;
+    --title-font-family: 'Playfair Display', sans-serif;
+}

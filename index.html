@@ -4,48 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tidy HTML Demo - Home</title>
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav__logo">
-            <a href="index.html">
-                <svg width="2rem" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M15.25 4.116c.039.899-.51.468-.79.629-.894.524-1.491 2.04-2.612 2.125-.423.87-1.121.898-1.874 1.503-.327.256-.463.839-.756 1.097l-3.694 3.27a2.395 2.395 0 0 1-.44.314c-.378.219-.656.717-1.096.81-.475.106-1.601-.775-2.633-2.012-.825-1.587-.025-1.924.518-2.525.916-1.022 2.48-2.064 3.585-2.753.843-.537 1.677-1.13 2.59-1.482.935-.357 1.779-.842 2.738-1.041.7-.141 1.522.063 2.206 0a9.596 9.596 0 0 1 2.258.065M30.676 3.646c-.06 1.046-1.038.955-1.593 1.363C27.32 6.31 25.8 8.656 23.63 9.583c-1.07 1.412-2.411 1.952-4.056 3.254-.711.56-1.21 1.417-1.877 1.965-2.887 2.381-5.668 4.524-8.64 6.823-.303.236-.646.468-1.008.697-.834.528-1.675 1.394-2.543 1.77-.95.413-2.376-.279-3.375-1.544-.43-1.849 1.112-2.657 2.38-3.737 2.13-1.82 5.33-4.012 7.558-5.536 1.707-1.17 3.395-2.426 5.138-3.43 1.789-1.03 3.439-2.179 5.224-3.063 1.303-.643 2.758-.96 4.038-1.53a40.762 40.762 0 0 1 4.207-1.606M30.386 14.346c.229.918-.566.8-.896 1.136-1.048 1.058-1.721 3.056-3.254 3.7-.563 1.17-1.522 1.532-2.603 2.507-.464.426-.731 1.128-1.177 1.542-1.94 1.77-3.91 3.263-6.082 4.772a6.36 6.36 0 0 1-.748.43c-.618.313-1.24.914-1.901 1.065-.731.161-1.856-.807-2.662-2.199-.401-1.784.715-2.129 1.6-2.818 1.49-1.15 3.693-2.49 5.192-3.486 1.154-.755 2.247-1.633 3.417-2.292 1.2-.68 2.244-1.52 3.44-2.128.868-.448 1.927-.61 2.79-1.029.92-.447 1.873-.85 2.884-1.2">
-                    </path>
-                </svg>
-            </a>
-        </div>
-        <div class="nav__left-item">
-            <div>Pricing</div>
-            <div>About</div>
-            <div>Blog</div>
-            <div>Wall of Love</div>
-            <div>Resources
-                <ul>
-                    <li>
-                        <a href="">404</a>
-                    </li>
-                    <li>
-                        <a href="">Support</a>
-                    </li>
-                </ul>
+    <nav class="wrapper">
+        <div class="container flex nav__container">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <svg width="2rem" fill="#2174ea" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.25 4.116c.039.899-.51.468-.79.629-.894.524-1.491 2.04-2.612 2.125-.423.87-1.121.898-1.874 1.503-.327.256-.463.839-.756 1.097l-3.694 3.27a2.395 2.395 0 0 1-.44.314c-.378.219-.656.717-1.096.81-.475.106-1.601-.775-2.633-2.012-.825-1.587-.025-1.924.518-2.525.916-1.022 2.48-2.064 3.585-2.753.843-.537 1.677-1.13 2.59-1.482.935-.357 1.779-.842 2.738-1.041.7-.141 1.522.063 2.206 0a9.596 9.596 0 0 1 2.258.065M30.676 3.646c-.06 1.046-1.038.955-1.593 1.363C27.32 6.31 25.8 8.656 23.63 9.583c-1.07 1.412-2.411 1.952-4.056 3.254-.711.56-1.21 1.417-1.877 1.965-2.887 2.381-5.668 4.524-8.64 6.823-.303.236-.646.468-1.008.697-.834.528-1.675 1.394-2.543 1.77-.95.413-2.376-.279-3.375-1.544-.43-1.849 1.112-2.657 2.38-3.737 2.13-1.82 5.33-4.012 7.558-5.536 1.707-1.17 3.395-2.426 5.138-3.43 1.789-1.03 3.439-2.179 5.224-3.063 1.303-.643 2.758-.96 4.038-1.53a40.762 40.762 0 0 1 4.207-1.606M30.386 14.346c.229.918-.566.8-.896 1.136-1.048 1.058-1.721 3.056-3.254 3.7-.563 1.17-1.522 1.532-2.603 2.507-.464.426-.731 1.128-1.177 1.542-1.94 1.77-3.91 3.263-6.082 4.772a6.36 6.36 0 0 1-.748.43c-.618.313-1.24.914-1.901 1.065-.731.161-1.856-.807-2.662-2.199-.401-1.784.715-2.129 1.6-2.818 1.49-1.15 3.693-2.49 5.192-3.486 1.154-.755 2.247-1.633 3.417-2.292 1.2-.68 2.244-1.52 3.44-2.128.868-.448 1.927-.61 2.79-1.029.92-.447 1.873-.85 2.884-1.2">
+                        </path>
+                    </svg>
+                </a>
             </div>
-        </div>
-        <div class="nav__right-item">
-            <div>Sign in</div>
-            <div>Request Demo </div>
+            <div class="nav__menu">
+                <div class="nav__menu-item">
+                    <a class="light" href="">Pricing</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a class="light" href="">About</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a class="light" href="">Blog</a>
+                </div>
+                <div class="nav__menu-item">
+                    <a class="light" href="">Wall of Love</a>
+                </div>
+                <div class="nav__menu-item dropdown">
+                    <a class="light" href="#0">Resources
+                        <svg class="cxbrt c18is chp24 c0jld cemoo c8gzo cazwt cnq1m" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown__body">
+                        <li class="dropdown__body-item">
+                            <a href="#0">404</a>
+                        </li>
+                        <li class="dropdown__body-item">
+                            <a href="#0">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <div class="nav__actions-item">
+                    <a class="light" href="">Sign in</a>
+                </div>
+                <div class="nav__actions-item">
+                    <a class="light h-white" href="">Request Demo
+                        <span class="arrow-r">-&gt;</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
     <header class="wrapper">
-        <div class="container">
-            <div class="header__right">
+        <div class="container header">
+            <div class="header__left">
                 <h1>Create stunning web experiences</h1>
                 <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful
-                    results forever.</p>
-                <div class="header__right-cta">
+                    results forever.
+                </p>
+                <div class="header__left-cta">
                     <div>
                         <a href="#">Request Demo </a>
                     </div>
@@ -54,77 +77,250 @@
                     </div>
                 </div>
             </div>
-            <div class="header__left">
+            <div class="header__right">
                 <div>
                     <img src="./assets/hero-image-01.jpg" width="540rem" height="405rem" alt="hero image">
+                    <button>
+                        <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="c7kgc cvp7r czklo cgp25 cm2m9 cuvvb" cx="44" cy="44" r="44"></circle>
+                            <path class="c6u4s"
+                                d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
-                <button>
-                    <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="c7kgc cvp7r czklo cgp25 cm2m9 cuvvb" cx="44" cy="44" r="44"></circle>
-                        <path class="c6u4s"
-                            d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z">
-                        </path>
-                    </svg>
-                </button>
             </div>
         </div>
     </header>
     <main>
-        <section class="wrapper">
+        <section class="wrapper first">
             <div class="container">
                 <div class="first__feature">
                     <div>
                         <div>
+                            <svg width="3rem" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <filter x="-17.5%" y="-10.4%" width="135%" height="129.2%" filterUnits="objectBoundingBox" id="fb1-a">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <filter x="-43.8%" y="-31.2%" width="187.5%" height="187.5%" filterUnits="objectBoundingBox" id="fb1-d">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <path d="M35 20H24a1 1 0 00-1 1v22a1 1 0 001 1h18a1 1 0 001-1V28h-8v-8z" id="fb1-b"></path>
+                                    <path id="fb1-e" d="M35 20v8h8z"></path>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fb1-c">
+                                        <stop stop-color="#FFF" offset="0%"></stop>
+                                        <stop stop-color="#E2EEFF" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect class="c6u4s c0jld" width="64" height="64" rx="32"></rect>
+                                <use fill="#000" filter="url(#fb1-a)" xlink:href="#fb1-b"></use>
+                                <use fill="url(#fb1-c)" xlink:href="#fb1-b"></use>
+                                <use fill="#000" filter="url(#fb1-d)" xlink:href="#fb1-e"></use>
+                                <use fill-opacity=".64" fill="#E2EEFF" xlink:href="#fb1-e"></use>
+                            </svg>
                         </div>
                         <h3>Robust Workflow</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                            pariatur.
+                        </p>
                     </div>
                     <div>
                         <div>
+                            <svg width="3rem" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <filter x="-12.1%" y="-13.2%" width="124.1%" height="136.8%" filterUnits="objectBoundingBox" id="fb2-a">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <filter x="-12.1%" y="-13.2%" width="124.1%" height="136.8%" filterUnits="objectBoundingBox" id="fb2-c">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <path d="M46 23H19c-.552 0-1 .424-1 .947v17.106c0 .523.448.947 1 .947h27c.552 0 1-.424 1-.947V23.947c0-.523-.448-.947-1-.947z" id="fb2-b"></path>
+                                    <path d="M46 23H19c-.552 0-1 .424-1 .947v17.106c0 .523.448.947 1 .947h27c.552 0 1-.424 1-.947V23.947c0-.523-.448-.947-1-.947z" id="fb2-d"></path>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fb2-e">
+                                        <stop stop-color="#FFF" offset="0%"></stop>
+                                        <stop stop-color="#E2EEFF" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect class="c6u4s c0jld" width="64" height="64" rx="32"></rect>
+                                <g transform="rotate(25 32.5 32.5)">
+                                    <use fill="#000" filter="url(#fb2-a)" xlink:href="#fb2-b"></use>
+                                    <use fill-opacity=".64" fill="#E2EEFF" xlink:href="#fb2-b"></use>
+                                </g>
+                                <g>
+                                    <use fill="#000" filter="url(#fb2-c)" xlink:href="#fb2-d"></use>
+                                    <use fill="url(#fb2-e)" xlink:href="#fb2-d"></use>
+                                </g>
+                                <path d="M32.5 36a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" fill-opacity=".64" fill="#5091EE"></path>
+                            </svg>
                         </div>
                         <h3>Robust Workflow</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                            pariatur.
+                        </p>
                     </div>
                     <div>
                         <div>
+                            <svg width="3rem" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <filter x="-12.1%" y="-13.2%" width="124.1%" height="136.8%" filterUnits="objectBoundingBox" id="fb2-a">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <filter x="-12.1%" y="-13.2%" width="124.1%" height="136.8%" filterUnits="objectBoundingBox" id="fb2-c">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <path d="M46 23H19c-.552 0-1 .424-1 .947v17.106c0 .523.448.947 1 .947h27c.552 0 1-.424 1-.947V23.947c0-.523-.448-.947-1-.947z" id="fb2-b"></path>
+                                    <path d="M46 23H19c-.552 0-1 .424-1 .947v17.106c0 .523.448.947 1 .947h27c.552 0 1-.424 1-.947V23.947c0-.523-.448-.947-1-.947z" id="fb2-d"></path>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fb2-e">
+                                        <stop stop-color="#FFF" offset="0%"></stop>
+                                        <stop stop-color="#E2EEFF" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect class="c6u4s c0jld" width="64" height="64" rx="32"></rect>
+                                <g transform="rotate(25 32.5 32.5)">
+                                    <use fill="#000" filter="url(#fb2-a)" xlink:href="#fb2-b"></use>
+                                    <use fill-opacity=".64" fill="#E2EEFF" xlink:href="#fb2-b"></use>
+                                </g>
+                                <g>
+                                    <use fill="#000" filter="url(#fb2-c)" xlink:href="#fb2-d"></use>
+                                    <use fill="url(#fb2-e)" xlink:href="#fb2-d"></use>
+                                </g>
+                                <path d="M32.5 36a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" fill-opacity=".64" fill="#5091EE"></path>
+                            </svg>
                         </div>
                         <h3>Robust Workflow</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                            pariatur.
+                        </p>
                     </div>
                     <div>
                         <div>
+                            <svg width="3rem" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <filter x="-29.2%" y="-11.5%" width="158.3%" height="132.2%" filterUnits="objectBoundingBox" id="fb4-a">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <filter x="-29.2%" y="-11.5%" width="158.3%" height="132.2%" filterUnits="objectBoundingBox" id="fb4-d">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <path d="M32 24.691l-10.737-2.656a1.007 1.007 0 00-.87.17c-.247.19-.393.483-.393.795v17a1 1 0 00.737.965L32 43.764V24.691z" id="fb4-b"></path>
+                                    <path d="M43.607 22.205a1.012 1.012 0 00-.87-.17L32 24.691v19.073l11.263-2.799A1 1 0 0044 40V23c0-.312-.146-.605-.393-.795z" id="fb4-e"></path>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fb4-c">
+                                        <stop stop-color="#FFF" offset="0%"></stop>
+                                        <stop stop-color="#E2EEFF" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect class="c6u4s c0jld" width="64" height="64" rx="32"></rect>
+                                <use fill="#000" filter="url(#fb4-a)" xlink:href="#fb4-b"></use>
+                                <use fill="url(#fb4-c)" xlink:href="#fb4-b"></use>
+                                <use fill="#000" filter="url(#fb4-d)" xlink:href="#fb4-e"></use>
+                                <use fill-opacity=".64" fill="#E2EEFF" xlink:href="#fb4-e"></use>
+                            </svg>
                         </div>
                         <h3>Robust Workflow</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                            pariatur.
+                        </p>
                     </div>
                     <div>
                         <div>
+                            <svg width="3rem" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <filter x="-29.2%" y="-22.7%" width="158.3%" height="163.6%" filterUnits="objectBoundingBox" id="fb5-a">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <filter x="-15.9%" y="-11.4%" width="131.8%" height="131.8%" filterUnits="objectBoundingBox" id="fb5-c">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <path id="fb5-b" d="M26 21h12v11H26z"></path>
+                                    <path d="M40 21h-4v10l-4-3-4 3V21h-4a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3V24a3 3 0 00-3-3z" id="fb5-d"></path>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fb5-e">
+                                        <stop stop-color="#FFF" offset="0%"></stop>
+                                        <stop stop-color="#E2EEFF" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect class="c6u4s c0jld" width="64" height="64" rx="32"></rect>
+                                <use fill="#000" filter="url(#fb5-a)" xlink:href="#fb5-b"></use>
+                                <use fill-opacity=".64" fill="#E2EEFF" xlink:href="#fb5-b"></use>
+                                <use fill="#000" filter="url(#fb5-c)" xlink:href="#fb5-d"></use>
+                                <use fill="url(#fb5-e)" xlink:href="#fb5-d"></use>
+                            </svg>
                         </div>
                         <h3>Robust Workflow</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                            pariatur.
+                        </p>
                     </div>
                     <div>
                         <div>
+                            <svg width="3rem" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <filter x="-14.6%" y="-11.4%" width="129.2%" height="132%" filterUnits="objectBoundingBox" id="fb6-a">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <filter x="-29.2%" y="-20.8%" width="158.3%" height="158.3%" filterUnits="objectBoundingBox" id="fb6-d">
+                                        <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                        <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                        <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                        <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1"></feColorMatrix>
+                                    </filter>
+                                    <path d="M41.95 24.051A6.957 6.957 0 0037 22a6.956 6.956 0 00-5 2.102l-.05-.051A6.957 6.957 0 0027 22c-1.87 0-3.627.729-4.95 2.051A6.948 6.948 0 0020 29c0 1.87.728 3.627 2.05 4.949l9.95 9.95 9.95-9.95A6.952 6.952 0 0044 29a6.954 6.954 0 00-2.05-4.949z" id="fb6-b"></path>
+                                    <path d="M36 33a6 6 0 100 12 6 6 0 000-12z" id="fb6-e"></path>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fb6-c">
+                                        <stop stop-color="#FFF" offset="0%"></stop>
+                                        <stop stop-color="#E2EEFF" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect class="c6u4s c0jld" width="64" height="64" rx="32"></rect>
+                                <use fill="#000" filter="url(#fb6-a)" xlink:href="#fb6-b"></use>
+                                <use fill="url(#fb6-c)" xlink:href="#fb6-b"></use>
+                                <use fill="#000" filter="url(#fb6-d)" xlink:href="#fb6-e"></use>
+                                <use fill-opacity=".64" fill="#E2EEFF" xlink:href="#fb6-e"></use>
+                            </svg>
                         </div>
                         <h3>Robust Workflow</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                            pariatur.
+                        </p>
                     </div>
                 </div>
         </section>
-        <section class="wrapper">
+        <section class="wrapper second">
             <div class="container">
                 <div class="second__feature">
                     <div class="second__feature-top">
                         <h2>Built exclusively for you</h2>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                             anim id
-                            est laborum — semper quis lectus nulla at volutpat diam ut venenatis.</p>
+                            est laborum — semper quis lectus nulla at volutpat diam ut venenatis.
+                        </p>
                     </div>
                     <div class="second__feature-bottom">
                         <button>
@@ -175,14 +371,16 @@
                     </div>
                     <div class="third__feature-bottom">
                         <div class="third__feature-bottomleft">
-                            <img src="./assets/features-home-02.png" width="450" height="620" alt="features home 02 01">
+                            <img src="./assets/features-home-02.png" width="450" height="620"
+                                alt="features home 02 01" />
                         </div>
                         <div class="third__feature-bottomright">
                             <div>
                                 <h3>Built exclusively for you</h3>
                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                     mollit
-                                    anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.</p>
+                                    anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.
+                                </p>
                             </div>
                             <div>
                                 <button>
@@ -210,7 +408,8 @@
                                     <div>Internal Feedback</div>
                                     <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat
-                                        nulla pariatur velit.</div>
+                                        nulla pariatur velit.
+                                    </div>
                                 </button>
                                 <button>
                                     <svg width="1rem" height="1rem" viewBox="0 0 16 16"
@@ -222,7 +421,8 @@
                                     <div>Internal Feedback</div>
                                     <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                         fugiat
-                                        nulla pariatur velit.</div>
+                                        nulla pariatur velit.
+                                    </div>
                                 </button>
                             </div>
                         </div>
@@ -254,7 +454,8 @@
                                 <a href="#0">Advanced Features</a>
                             </h3>
                             <p>Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing
-                                layouts.</p>
+                                layouts.
+                            </p>
                         </article>
                         <article>
                             <a href="#0">
@@ -273,7 +474,8 @@
                                 <a href="#0">Advanced Features</a>
                             </h3>
                             <p>Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing
-                                layouts.</p>
+                                layouts.
+                            </p>
                         </article>
                         <article>
                             <a href="#0">
@@ -292,7 +494,8 @@
                                 <a href="#0">Advanced Features</a>
                             </h3>
                             <p>Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing
-                                layouts.</p>
+                                layouts.
+                            </p>
                         </article>
                     </div>
                 </div>
@@ -305,7 +508,8 @@
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                             anim id
                             est
-                            laborum — semper quis lectus nulla at volutpat diam ut venenatis.</p>
+                            laborum — semper quis lectus nulla at volutpat diam ut venenatis.
+                        </p>
                     </div>
                     <div class="fifth__feature-bottom">
                         <div class="fifth__feature-bottomleft">
@@ -322,7 +526,8 @@
                                     <div>
                                         <p>Lorem ipsum is placeholder text used in the graphic, print, and publishing
                                             for
-                                            previewing layouts.</p>
+                                            previewing layouts.
+                                        </p>
                                     </div>
                                 </li>
                                 <li>
@@ -337,7 +542,8 @@
                                     <div>
                                         <p>Lorem ipsum is placeholder text used in the graphic, print, and publishing
                                             for
-                                            previewing layouts.</p>
+                                            previewing layouts.
+                                        </p>
                                     </div>
                                 </li>
                                 <li>
@@ -352,7 +558,8 @@
                                             <p>Lorem ipsum is placeholder text used in the graphic, print, and
                                                 publishing
                                                 for
-                                                previewing layouts.</p>
+                                                previewing layouts.
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
@@ -590,7 +797,8 @@
                         </h2>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                             anim id
-                            est laborum — semper quis lectus nulla at volutpat diam ut venenatis.</p>
+                            est laborum — semper quis lectus nulla at volutpat diam ut venenatis.
+                        </p>
                         <div class="cta">
                             <a href="./assets/request-demo.svg">
                                 Request Demo
@@ -602,128 +810,130 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="wrapper">
         <div class="container">
-            <div class="footer__top">
-                <div class="footer__top-brand">
-                    <div>
-                        <a href="./assets/logo.svg">
-                            <svg width="4rem" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.25 4.116c.039.899-.51.468-.79.629-.894.524-1.491 2.04-2.612 2.125-.423.87-1.121.898-1.874 1.503-.327.256-.463.839-.756 1.097l-3.694 3.27a2.395 2.395 0 0 1-.44.314c-.378.219-.656.717-1.096.81-.475.106-1.601-.775-2.633-2.012-.825-1.587-.025-1.924.518-2.525.916-1.022 2.48-2.064 3.585-2.753.843-.537 1.677-1.13 2.59-1.482.935-.357 1.779-.842 2.738-1.041.7-.141 1.522.063 2.206 0a9.596 9.596 0 0 1 2.258.065M30.676 3.646c-.06 1.046-1.038.955-1.593 1.363C27.32 6.31 25.8 8.656 23.63 9.583c-1.07 1.412-2.411 1.952-4.056 3.254-.711.56-1.21 1.417-1.877 1.965-2.887 2.381-5.668 4.524-8.64 6.823-.303.236-.646.468-1.008.697-.834.528-1.675 1.394-2.543 1.77-.95.413-2.376-.279-3.375-1.544-.43-1.849 1.112-2.657 2.38-3.737 2.13-1.82 5.33-4.012 7.558-5.536 1.707-1.17 3.395-2.426 5.138-3.43 1.789-1.03 3.439-2.179 5.224-3.063 1.303-.643 2.758-.96 4.038-1.53a40.762 40.762 0 0 1 4.207-1.606M30.386 14.346c.229.918-.566.8-.896 1.136-1.048 1.058-1.721 3.056-3.254 3.7-.563 1.17-1.522 1.532-2.603 2.507-.464.426-.731 1.128-1.177 1.542-1.94 1.77-3.91 3.263-6.082 4.772a6.36 6.36 0 0 1-.748.43c-.618.313-1.24.914-1.901 1.065-.731.161-1.856-.807-2.662-2.199-.401-1.784.715-2.129 1.6-2.818 1.49-1.15 3.693-2.49 5.192-3.486 1.154-.755 2.247-1.633 3.417-2.292 1.2-.68 2.244-1.52 3.44-2.128.868-.448 1.927-.61 2.79-1.029.92-.447 1.873-.85 2.884-1.2">
-                                </path>
-                            </svg>
-                        </a>
+            <div class="footer">
+                <div class="footer__top">
+                    <div class="footer__top-brand">
+                        <div>
+                            <a href="./assets/logo.svg">
+                                <svg width="4rem" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.25 4.116c.039.899-.51.468-.79.629-.894.524-1.491 2.04-2.612 2.125-.423.87-1.121.898-1.874 1.503-.327.256-.463.839-.756 1.097l-3.694 3.27a2.395 2.395 0 0 1-.44.314c-.378.219-.656.717-1.096.81-.475.106-1.601-.775-2.633-2.012-.825-1.587-.025-1.924.518-2.525.916-1.022 2.48-2.064 3.585-2.753.843-.537 1.677-1.13 2.59-1.482.935-.357 1.779-.842 2.738-1.041.7-.141 1.522.063 2.206 0a9.596 9.596 0 0 1 2.258.065M30.676 3.646c-.06 1.046-1.038.955-1.593 1.363C27.32 6.31 25.8 8.656 23.63 9.583c-1.07 1.412-2.411 1.952-4.056 3.254-.711.56-1.21 1.417-1.877 1.965-2.887 2.381-5.668 4.524-8.64 6.823-.303.236-.646.468-1.008.697-.834.528-1.675 1.394-2.543 1.77-.95.413-2.376-.279-3.375-1.544-.43-1.849 1.112-2.657 2.38-3.737 2.13-1.82 5.33-4.012 7.558-5.536 1.707-1.17 3.395-2.426 5.138-3.43 1.789-1.03 3.439-2.179 5.224-3.063 1.303-.643 2.758-.96 4.038-1.53a40.762 40.762 0 0 1 4.207-1.606M30.386 14.346c.229.918-.566.8-.896 1.136-1.048 1.058-1.721 3.056-3.254 3.7-.563 1.17-1.522 1.532-2.603 2.507-.464.426-.731 1.128-1.177 1.542-1.94 1.77-3.91 3.263-6.082 4.772a6.36 6.36 0 0 1-.748.43c-.618.313-1.24.914-1.901 1.065-.731.161-1.856-.807-2.662-2.199-.401-1.784.715-2.129 1.6-2.818 1.49-1.15 3.693-2.49 5.192-3.486 1.154-.755 2.247-1.633 3.417-2.292 1.2-.68 2.244-1.52 3.44-2.128.868-.448 1.927-.61 2.79-1.029.92-.447 1.873-.85 2.884-1.2">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <p>The smarter way to start your next idea.</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>The smarter way to start your next idea.</p>
+                    <div class="footer__top-item">
+                        <div>
+                            <h6>How it works</h6>
+                            <ul>
+                                <li>
+                                    <a href="#0">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Service Areas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>Resources</h6>
+                            <ul>
+                                <li>
+                                    <a href="#0">Customer Stories</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Knowledge Base</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>Products</h6>
+                            <ul>
+                                <li>
+                                    <a href="#0">Corporate Partners</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Secure Identity</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Legal Help</a>
+                                </li>
+                                <li>
+                                    <a href="#0">First Capital</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>Company</h6>
+                            <ul>
+                                <li>
+                                    <a href="#0">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="footer__top-item">
-                    <div>
-                        <h6>How it works</h6>
+                <div class="footer__bottom">
+                    <div class="footer__bottom_sociallinks">
                         <ul>
                             <li>
-                                <a href="#0">Overview</a>
+                                <a href="#0">
+                                    <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m6.329 1 4.369 5.594L15.75 1h3.068L12.12 8.414 20 18.5h-6.172l-4.833-6.116L3.464 18.5H.395l7.169-7.928L0 1h6.329Zm-.925 1.684H3.583l11.093 14.04h1.7L5.404 2.684Z">
+                                        </path>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="#0">Pricing</a>
+                                <a href="#0">
+                                    <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 10.025C20 4.491 15.52 0 10 0S0 4.491 0 10.025c0 4.852 3.44 8.892 8 9.825v-6.817H6v-3.008h2V7.52a3.508 3.508 0 0 1 3.5-3.509H14v3.008h-2c-.55 0-1 .45-1 1.002v2.005h3v3.008h-3V20c5.05-.501 9-4.772 9-9.975Z">
+                                        </path>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="#0">Service Areas</a>
+                                <a href="#0">
+                                    <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.96 2.336a.421.421 0 0 0-.291-.308 1.543 1.543 0 0 0-.788.054S1.358 8.194.358 8.87c-.215.145-.288.23-.324.33-.173.485.366.694.366.694l4.517 1.428a.506.506 0 0 0 .229-.013c1.026-.63 10.332-6.335 10.873-6.527.083-.024.148 0 .131.061-.215.732-8.257 7.664-8.301 7.706a.16.16 0 0 0-.06.143l-.422 4.28s-.176 1.331 1.196 0a38.082 38.082 0 0 1 2.374-2.11c1.553 1.041 3.224 2.192 3.945 2.794.245.23.576.354.916.342.426-.05.774-.35.876-.754 0 0 3.192-12.471 3.298-14.142.011-.162.025-.268.027-.38.005-.13-.008-.26-.04-.387Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.041 0C4.52 0 0 4.612 0 10.25c0 4.526 2.845 8.37 6.862 9.737.502.085.669-.257.669-.513v-1.708c-2.761.598-3.347-1.367-3.347-1.367-.419-1.196-1.088-1.537-1.088-1.537-1.004-.598 0-.598 0-.598 1.004.085 1.506 1.025 1.506 1.025.92 1.537 2.343 1.11 2.929.854.084-.683.335-1.11.67-1.367-2.26-.256-4.603-1.11-4.603-5.039 0-1.11.419-2.05 1.004-2.733 0-.342-.418-1.367.168-2.733 0 0 .836-.257 2.76 1.025.838-.257 1.674-.342 2.511-.342.837 0 1.674.085 2.51.342 1.925-1.367 2.762-1.025 2.762-1.025.586 1.452.167 2.477.084 2.733.669.683 1.004 1.623 1.004 2.733 0 3.93-2.343 4.783-4.603 5.04.335.341.67.939.67 1.879v2.818c0 .256.167.598.67.513 4.016-1.367 6.86-5.21 6.86-9.737C20.084 4.612 15.565 0 10.042 0Z">
+                                        </path>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h6>Resources</h6>
-                        <ul>
-                            <li>
-                                <a href="#0">Customer Stories</a>
-                            </li>
-                            <li>
-                                <a href="#0">Knowledge Base</a>
-                            </li>
-                            <li>
-                                <a href="#0">Contact Us</a>
-                            </li>
-                        </ul>
+                    <div class="footer__bottom-copywright">
+                        <p>© Cruip.com. All rights reserved.</p>
                     </div>
-                    <div>
-                        <h6>Products</h6>
-                        <ul>
-                            <li>
-                                <a href="#0">Corporate Partners</a>
-                            </li>
-                            <li>
-                                <a href="#0">Secure Identity</a>
-                            </li>
-                            <li>
-                                <a href="#0">Legal Help</a>
-                            </li>
-                            <li>
-                                <a href="#0">First Capital</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h6>Company</h6>
-                        <ul>
-                            <li>
-                                <a href="#0">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#0">Careers</a>
-                            </li>
-                            <li>
-                                <a href="#0">Terms of Use</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__bottom_sociallinks">
-                    <ul>
-                        <li>
-                            <a href="#0">
-                                <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="m6.329 1 4.369 5.594L15.75 1h3.068L12.12 8.414 20 18.5h-6.172l-4.833-6.116L3.464 18.5H.395l7.169-7.928L0 1h6.329Zm-.925 1.684H3.583l11.093 14.04h1.7L5.404 2.684Z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
-                                <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M20 10.025C20 4.491 15.52 0 10 0S0 4.491 0 10.025c0 4.852 3.44 8.892 8 9.825v-6.817H6v-3.008h2V7.52a3.508 3.508 0 0 1 3.5-3.509H14v3.008h-2c-.55 0-1 .45-1 1.002v2.005h3v3.008h-3V20c5.05-.501 9-4.772 9-9.975Z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
-                                <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.96 2.336a.421.421 0 0 0-.291-.308 1.543 1.543 0 0 0-.788.054S1.358 8.194.358 8.87c-.215.145-.288.23-.324.33-.173.485.366.694.366.694l4.517 1.428a.506.506 0 0 0 .229-.013c1.026-.63 10.332-6.335 10.873-6.527.083-.024.148 0 .131.061-.215.732-8.257 7.664-8.301 7.706a.16.16 0 0 0-.06.143l-.422 4.28s-.176 1.331 1.196 0a38.082 38.082 0 0 1 2.374-2.11c1.553 1.041 3.224 2.192 3.945 2.794.245.23.576.354.916.342.426-.05.774-.35.876-.754 0 0 3.192-12.471 3.298-14.142.011-.162.025-.268.027-.38.005-.13-.008-.26-.04-.387Z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#0">
-                                <svg width="1.25rem" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.041 0C4.52 0 0 4.612 0 10.25c0 4.526 2.845 8.37 6.862 9.737.502.085.669-.257.669-.513v-1.708c-2.761.598-3.347-1.367-3.347-1.367-.419-1.196-1.088-1.537-1.088-1.537-1.004-.598 0-.598 0-.598 1.004.085 1.506 1.025 1.506 1.025.92 1.537 2.343 1.11 2.929.854.084-.683.335-1.11.67-1.367-2.26-.256-4.603-1.11-4.603-5.039 0-1.11.419-2.05 1.004-2.733 0-.342-.418-1.367.168-2.733 0 0 .836-.257 2.76 1.025.838-.257 1.674-.342 2.511-.342.837 0 1.674.085 2.51.342 1.925-1.367 2.762-1.025 2.762-1.025.586 1.452.167 2.477.084 2.733.669.683 1.004 1.623 1.004 2.733 0 3.93-2.343 4.783-4.603 5.04.335.341.67.939.67 1.879v2.818c0 .256.167.598.67.513 4.016-1.367 6.86-5.21 6.86-9.737C20.084 4.612 15.565 0 10.042 0Z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__bottom-copywright">
-                    <p>© Cruip.com. All rights reserved.</p>
                 </div>
             </div>
         </div>

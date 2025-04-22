@@ -1,0 +1,222 @@
+@import url('./root.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font-family);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+html, body {
+    /* 16px=1rem. i.e, 32px=2rem*/
+    font-size: var(--global-font-size);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--tertiary-color);
+    font-family: var( --title-font-family);
+}
+
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light{
+    color: var(--title-light-color);
+}
+
+a.light, p.light {
+    color: var(--text-light-color);
+}
+
+
+a {
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+a.h-white:hover {
+    color: white;
+}
+
+a .arrow-r {
+    display: inline;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    position: relative;
+    transition: all ease-in-out 25s;
+}
+
+a.hover .arrow-r {
+    transform: transaltex(3px);
+    transition: all ease-in-out;
+    margin-left: 8px;
+}
+
+a.hover.arrow-r:hover{}
+
+.flex {             
+    /* utility to associate a display flex to an element specifically */
+    display: flex;
+}
+
+/* wrapper & container start*/
+.wrapper  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 1.5rem;
+    /*max-width: var(--container-max-w);*/
+}
+/* wrapper & container end */
+
+/* nav start */
+nav {
+    height: 80px;
+    background: var(--tertiary-color);
+    justify-content: center;
+    justify-content: space-between;
+}
+
+nav .nav__container{
+    gap: 40px;
+}
+nav .nav__logo svg{
+}
+
+nav .nav__menu {
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+    gap: 40px;
+    align-items: center;
+}
+
+nav .nav__menu .nav__menu-item{
+    padding: 0.5rem 0;
+}
+
+/* dropdown start */
+.dropdown{
+    position: relative;
+}
+
+.dropdown a svg {
+    height: 12px;
+    width: 12px;
+    fill: var(--text-light-color);
+} 
+
+.dropdown__body{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    padding-block: 0.25rem;
+    list-style-type: none;
+    top: calc(100%+0.5rem);
+    right: 0px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    transition: all ease ease-in-out 0.25s;
+}
+.dropdown:hover .dropdown__body{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.dropdown .dropdown__body .dropdown__body-item a{
+    display: block;
+    padding: 0.25rem;
+    font-size:0.875 ;
+    font-weight: 500px;
+}
+/* dropdown end */
+
+nav .nav__actions {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+/* nav end */
+
+/* header start*/
+header{
+    background-color: var(--tertiary-color);
+}
+
+.header{
+    display: inline-flex;
+    /*background-color: var(--tertiary-color)*/
+}
+
+.header h1 {
+    margin-bottom: 16px;
+    color: var(--background-color);
+}
+
+.header p{
+    margin-bottom: 32px;
+}
+
+
+.header .header__left-cta {
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+}
+/* header end*/
+
+h2 {
+    font-size: var(--title-font-size);
+    justify-content: center;
+    margin: 20px;
+}
+
+/*p {
+    align-items: center;
+    margin: 20px;
+}*/
+
+/* first feature start*/
+.first {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 40px;
+    height: 900px;
+}
+
+.first__feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* first feature end*/
+
+/* second feature start */
+.second{
+    background: linear-gradient(
+        to bottom,
+        var(--title-light-color) 60%,
+        #ffffff 60%
+    );
+}
+/* second feature end*/
